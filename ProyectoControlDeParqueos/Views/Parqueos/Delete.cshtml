@@ -1,0 +1,58 @@
+﻿@model ProyectoControlDeParqueos.Models.Parqueo
+
+@{
+    // ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="my-3">Eliminar Parqueo</h1>
+
+<h3>¿Estás seguro de que deseas eliminar este registro?</h3>
+<div>
+    <h4>Parqueo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.nombreParqueo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.nombreParqueo)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ubicacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ubicacion)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.capacidadTotal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.capacidadTotal)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.espaciosDisponibles)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.espaciosDisponibles)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="idParqueo" />
+        <div class="btn-group" role="group">
+            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm" />
+            <a asp-action="Index" class="btn btn-secondary btn-sm ms-1">Regresar</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProyectoControlDeParqueos.Models.TicketSalida>
+
+@{
+    ViewData["Title"] = "Tickets de Salida";
+}
+
+<h1 class="text-center my-4">Tickets de Salida</h1>
+
+<p class="text-center">
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo Ticket de Salida</a>
+</p>
+
+<table class="table table-striped" id="tablajs">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Registro de Vehículo</th>
+            <th>Parqueo</th>
+            <th>Tarifa</th>
+            <th>Fecha de Salida</th>
+            <th>Costo Total</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ticket in Model)
+        {
+            <tr class="bg-light">
+                <td>@ticket.idTicketSalida</td>
+                <td>@ticket.Cliente.nombreCompleto</td>
+                <td>@ticket.RegistroVehiculo.placa</td>
+                <td>@ticket.Parqueo.nombreParqueo</td>
+                <td>Q @ticket.Tarifa.costoPorHora.ToString("0.00").Replace(",", ".")</td>
+                <td>@ticket.fechaSalida.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>Q @ticket.costoTotal.ToString("0.00").Replace(",", ".")</td>
+                <td>
+                    <div class="d-flex gap-2">
+                        <a asp-action="Details" asp-route-id="@ticket.idTicketSalida" class="btn btn-info btn-sm">Detalles</a>
+                        <a asp-action="Edit" asp-route-id="@ticket.idTicketSalida" class="btn btn-warning btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@ticket.idTicketSalida" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a asp-action="ExportarPDF" asp-route-id="@ticket.idTicketSalida" class="btn btn-secondary btn-sm">Imprimir Ticket</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <text>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Éxito',
+                        text: '@TempData["SuccessMessage"]'
+                    });
+            </text>
+        }
+                });
+    </script>
+}

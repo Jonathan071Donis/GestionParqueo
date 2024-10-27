@@ -1,0 +1,51 @@
+﻿@model ProyectoControlDeParqueos.Models.Tarifa
+
+@{
+    // ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar Tarifa</h1>
+
+@* <h4>Tarifa</h4> *@
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="idTarifa" />
+            <div class="form-group mb-3">
+                <label asp-for="descripcion" class="form-label"></label>
+                <input asp-for="descripcion" class="form-control" />
+                <span asp-validation-for="descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="costoPorHora" class="form-label"></label>
+                <input asp-for="costoPorHora" class="form-control" />
+                <span asp-validation-for="costoPorHora" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="costoPorDia" class="form-label"></label>
+                <input asp-for="costoPorDia" class="form-control" />
+                <span asp-validation-for="costoPorDia" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check mb-3">
+                <input class="form-check-input" asp-for="estado" />
+                <label class="form-check-label" asp-for="estado"></label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

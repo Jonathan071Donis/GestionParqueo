@@ -1,0 +1,88 @@
+/* Estilo base */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Responsive styles */
+.container {
+    max-width: 100%; /* Hacer que la contenedor ocupe el 100% del ancho disponible */
+    padding: 0 15px; /* Agregar un padding lateral para evitar que el contenido toque los bordes */
+}
+
+.header,
+.footer {
+    padding: 15px; /* Espaciado interno en el header y footer */
+    text-align: center; /* Centrar texto en header y footer */
+}
+
+.row {
+    display: flex; /* Usar flexbox para crear un diseño más flexible */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en múltiples líneas */
+}
+
+.col {
+    flex: 1; /* Permitir que las columnas crezcan y se reduzcan de forma flexible */
+    padding: 10px; /* Agregar espaciado entre columnas */
+}
+
+/* Media Queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%; /* Botones ocuparán el ancho completo en dispositivos más pequeños */
+    }
+
+    .row {
+        flex-direction: column; /* Colocar columnas una debajo de la otra */
+    }
+
+    .chart {
+        width: 100%; /* Ocupar todo el ancho en dispositivos pequeños */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+}
+
+/* Media Queries para dispositivos más grandes */
+@media (min-width: 768px) {
+    .col-6 {
+        flex: 0 0 50%; /* Dos columnas en pantallas medianas */
+    }
+
+    .chart {
+        width: 45%; /* Ancho más pequeño en pantallas medianas */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+}
+
+@media (min-width: 992px) {
+    .col-4 {
+        flex: 0 0 33.33%; /* Tres columnas en pantallas grandes */
+    }
+
+    .chart {
+        width: 30%; /* Ancho más pequeño en pantallas grandes */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+}

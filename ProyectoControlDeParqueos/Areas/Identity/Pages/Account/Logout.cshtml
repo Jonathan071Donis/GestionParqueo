@@ -1,0 +1,103 @@
+﻿@page
+@model LogoutModel
+
+@{
+    ViewData["Title"] = "¿Está seguro de cerrar sesión?";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #08f9e6, #092523);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logout-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(173, 216, 230, 0.8); /* Borde celeste */
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+            .logout-container h1 {
+                font-size: 24px;
+                color: #4682b4; /* Color celeste oscuro */
+                margin-bottom: 30px;
+            }
+
+            .logout-container button {
+                background-color: #4682b4; /* Celeste oscuro */
+                color: white;
+                padding: 15px;
+                width: 100%;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-bottom: 15px;
+                transition: background-color 0.3s ease;
+            }
+
+                .logout-container button:hover {
+                    background-color: #5a9bd5; /* Más claro al hacer hover */
+                }
+
+            .logout-container p {
+                color: #b5acaa; /* Texto de confirmación */
+                margin-top: 20px;
+            }
+
+        .btn-secondary {
+            background-color: #87cefa; /* Celeste claro */
+            color: #333;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-secondary:hover {
+                background-color: #b0e0e6; /* Más claro al hacer hover */
+            }
+    </style>
+</head>
+<body>
+
+    <div class="logout-container">
+        <h1>@ViewData["Title"]</h1>
+        @if (User.Identity?.IsAuthenticated ?? false)
+        {
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                <button type="submit" class="btn btn-lg btn-primary">Cerrar sesión</button>
+            </form>
+            <form asp-area="Identity" asp-page="/Home/Index" method="get">
+                <button type="submit" class="btn btn-secondary btn-lg">No cerrar sesión</button>
+            </form>
+        }
+        else
+        {
+            <p>Has cerrado sesión con éxito.</p>
+        }
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProyectoControlDeParqueos.Models.RegistroVehiculo>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center my-4">Registro de Vehículos</h1>
+
+<p class="text-center mb-4">
+    <a asp-action="Create" class="btn btn-primary mb-3">Crear Registro Vehículos</a>
+</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                icon: 'success',
+                title: '¡Buen trabajo!',
+                text: '@TempData["SuccessMessage"]',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+}
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover" id="tablajs">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.placa)</th>
+                <th>@Html.DisplayNameFor(model => model.marca)</th>
+                <th>@Html.DisplayNameFor(model => model.modelo)</th>
+                <th>@Html.DisplayNameFor(model => model.color)</th>
+                <th>@Html.DisplayNameFor(model => model.fechaIngreso)</th>
+                <th>@Html.DisplayNameFor(model => model.estado)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.placa)</td>
+                    <td>@Html.DisplayFor(modelItem => item.marca)</td>
+                    <td>@Html.DisplayFor(modelItem => item.modelo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.color)</td>
+                    <td>@Html.DisplayFor(modelItem => item.fechaIngreso)</td>
+                    <td>@Html.DisplayFor(modelItem => item.estado)</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Edit" asp-route-id="@item.idRegistroVehiculo" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-action="Details" asp-route-id="@item.idRegistroVehiculo" class="btn btn-info btn-sm">Detalles</a>
+                            <a asp-action="Delete" asp-route-id="@item.idRegistroVehiculo" class="btn btn-danger btn-sm">Eliminar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Importar la librería SweetAlert2 al final para garantizar que está disponible -->
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+}

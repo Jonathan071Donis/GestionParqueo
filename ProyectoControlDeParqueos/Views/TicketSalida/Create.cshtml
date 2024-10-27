@@ -1,0 +1,80 @@
+﻿@model ProyectoControlDeParqueos.Models.TicketSalida
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>TicketSalida</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ClienteId" class="control-label"></label>
+                <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistroVehiculoId" class="control-label"></label>
+                <select asp-for="RegistroVehiculoId" class="form-control" asp-items="ViewBag.RegistroVehiculoId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParqueoId" class="control-label"></label>
+                <select asp-for="ParqueoId" class="form-control" asp-items="ViewBag.ParqueoId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TarifaId" class="control-label"></label>
+                <select asp-for="TarifaId" class="form-control" asp-items="ViewBag.TarifaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaSalida" class="control-label"></label>
+                <input asp-for="fechaSalida" class="form-control" />
+                <span asp-validation-for="fechaSalida" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cantidad" class="control-label"></label>
+                <input asp-for="cantidad" class="form-control" id="cantidadInput" />
+                <span asp-validation-for="cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="costoTotal" class="control-label"></label>
+                <input asp-for="costoTotal" class="form-control" readonly="readonly" />
+                <span asp-validation-for="costoTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="estado" /> @Html.DisplayNameFor(model => model.estado)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.getElementById("cantidadInput").addEventListener("input", function () {
+            var cantidad = parseFloat(this.value);
+            var costoTotal = 0;
+
+            // Comprobar si cantidad es 30 o 120
+            if (cantidad === 30 || cantidad === 120) {
+                costoTotal = cantidad * 3; // Multiplicar por 3
+            }
+
+            // Asignar el costo total al campo correspondiente
+            document.getElementById("costoTotal").value = costoTotal;
+        });
+    </script>
+}

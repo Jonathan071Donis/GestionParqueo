@@ -1,0 +1,45 @@
+﻿@model ProyectoControlDeParqueos.Models.Cliente
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Estás seguro de que deseas eliminar esto?</h3>
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2 font-weight-bold">
+            @Html.DisplayNameFor(model => model.nombreCompleto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.nombreCompleto)
+        </dd>
+        <dt class="col-sm-2 font-weight-bold">
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+        <dt class="col-sm-2 font-weight-bold">
+            @Html.DisplayNameFor(model => model.correoElectronico)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.correoElectronico)
+        </dd>
+        <dt class="col-sm-2 font-weight-bold">
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="idCliente" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+    </form>
+</div>

@@ -1,0 +1,58 @@
+﻿@model ProyectoControlDeParqueos.Models.Parqueo
+
+@{
+    // ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="my-3">Editar Parqueo</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="idParqueo" />
+
+            <div class="form-group">
+                <label asp-for="nombreParqueo" class="control-label"></label>
+                <input asp-for="nombreParqueo" class="form-control" />
+                <span asp-validation-for="nombreParqueo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ubicacion" class="control-label"></label>
+                <input asp-for="ubicacion" class="form-control" />
+                <span asp-validation-for="ubicacion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="capacidadTotal" class="control-label"></label>
+                <input asp-for="capacidadTotal" class="form-control" />
+                <span asp-validation-for="capacidadTotal" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="espaciosDisponibles" class="control-label"></label>
+                <input asp-for="espaciosDisponibles" class="form-control" />
+                <span asp-validation-for="espaciosDisponibles" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="estado" /> @Html.DisplayNameFor(model => model.estado)
+                </label>
+            </div>
+
+            <div class="form-group btn-group mt-3" role="group">
+                <input type="submit" value="Guardar" class="btn btn-primary btn-sm" />
+                <a asp-action="Index" class="btn btn-secondary btn-sm ms-1">Regresar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

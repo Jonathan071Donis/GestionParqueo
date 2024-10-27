@@ -1,0 +1,74 @@
+﻿@model IEnumerable<ProyectoControlDeParqueos.Models.Cliente>
+
+@{
+    // ViewData["Title"] = "Lista de Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center my-4">Lista de Clientes</h1>
+
+<p class="text-center mb-4">
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                icon: 'success',
+                title: 'Buen trabajo',
+                text: '@TempData["SuccessMessage"]',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+}
+
+<table class="table table-striped" id="tablajs">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreCompleto) 
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono) 
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correoElectronico) 
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado) 
+            </th>
+            <th class="text-center">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.correoElectronico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.estado)
+                </td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.idCliente" class="btn btn-warning btn-sm">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.idCliente" class="btn btn-info btn-sm">Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@item.idCliente" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+}

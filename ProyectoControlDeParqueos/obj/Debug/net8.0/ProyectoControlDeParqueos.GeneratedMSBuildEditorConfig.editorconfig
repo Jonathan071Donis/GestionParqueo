@@ -1,0 +1,223 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyectoControlDeParqueos
+build_property.RootNamespace = ProyectoControlDeParqueos
+build_property.ProjectDir = D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Cliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Cliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Cliente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Cliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Parqueos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Parqueos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Parqueos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Parqueos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Parqueos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/RegistroVehiculoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9WZWhpY3Vsb2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/RegistroVehiculoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9WZWhpY3Vsb2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/RegistroVehiculoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9WZWhpY3Vsb2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/RegistroVehiculoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9WZWhpY3Vsb2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/RegistroVehiculoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9WZWhpY3Vsb2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/ReporteIngresos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZUluZ3Jlc29zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/ReporteVehiculos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVZlaGljdWxvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Reporte/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Tarifas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Tarifas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Tarifas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Tarifas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Tarifas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketIngreso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0SW5ncmVzb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketIngreso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0SW5ncmVzb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketIngreso/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0SW5ncmVzb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketIngreso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0SW5ncmVzb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketIngreso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0SW5ncmVzb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketSalida/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0U2FsaWRhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketSalida/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0U2FsaWRhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketSalida/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0U2FsaWRhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketSalida/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0U2FsaWRhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/TicketSalida/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0U2FsaWRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Segundo semestre 2024/Proyecto/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/ProyectoControlDeParqueos/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-21kljxjacz

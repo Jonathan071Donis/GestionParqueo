@@ -1,0 +1,45 @@
+﻿@model ProyectoControlDeParqueos.Models.Tarifa
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Está seguro que desea eliminar la tarifa?</h3>
+<div>
+    <h4>Tarifa</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.costoPorHora)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.costoPorHora)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.costoPorDia)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.costoPorDia)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" class="mt-3">
+        <input type="hidden" asp-for="idTarifa" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+    </form>
+</div>

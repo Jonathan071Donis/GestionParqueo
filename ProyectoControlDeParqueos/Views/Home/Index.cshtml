@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Estilo de la página -->
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #main-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #dashboard {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        width: 100%;
+        max-width: 1000px;
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .chart {
+        width: 22%;
+        min-width: 150px;
+        margin: 5px;
+        text-align: center;
+    }
+</style>
+
+<div id="main-container">
+    <div class="text-center" id="dashboard">
+        <h1 class="display-4" style="flex-basis: 100%; text-align: center;">Bienvenidos a parqueo "El Tunas"</h1>
+
+        <div class="chart">
+            <canvas id="occupancyChart" width="300" height="150"></canvas>
+            <h5>Porcentaje de Ocupación</h5>
+        </div>
+        <div class="chart">
+            <canvas id="vehiclesChart" width="300" height="150"></canvas>
+            <h5>Vehículos Ingresados </h5>
+        </div>
+        <div class="chart">
+            <canvas id="tariffsChart" width="300" height="150"></canvas>
+            <h5>Tarifas Activas</h5>
+        </div>
+        <div class="chart">
+            <canvas id="clientsChart" width="300" height="150"></canvas>
+            <h5>Clientes Activos</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    let occupancyChart, vehiclesChart, tariffsChart, clientsChart;
+
+    function renderCharts(ocupacion, vehiculosIngresadosHoy, tarifasActivas, clientesActivos) {
+        if (occupancyChart) occupancyChart.destroy();
+        if (vehiclesChart) vehiclesChart.destroy();
+        if (tariffsChart) tariffsChart.destroy();
+        if (clientsChart) clientsChart.destroy();
+
+        occupancyChart = new Chart(document.getElementById('occupancyChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Ocupación', 'Libre'],
+                datasets: [{
+                    label: 'Porcentaje de Ocupación',
+                    data: [ocupacion, 100 - ocupacion],
+                    backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(255, 99, 132, 0.2)'],
+                    borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)'],
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        vehiclesChart = new Chart(document.getElementById('vehiclesChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Vehículos Ingresados', 'No Ingresados'],
+                datasets: [{
+                    label: 'Total de Vehículos',
+                    data: [vehiculosIngresadosHoy, 20 - vehiculosIngresadosHoy],
+                    backgroundColor: ['rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'],
+                    borderColor: ['rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        tariffsChart = new Chart(document.getElementById('tariffsChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Tarifas Activas', 'Tarifas Inactivas'],
+                datasets: [{
+                    label: 'Cantidad de Tarifas',
+                    data: [tarifasActivas, 10 - tarifasActivas],
+                    backgroundColor: ['rgba(255, 206, 86, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+                    borderColor: ['rgba(255, 206, 86, 1)', 'rgba(54, 162, 235, 1)'],
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        clientsChart = new Chart(document.getElementById('clientsChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Clientes Activos', 'Clientes Inactivos'],
+                datasets: [{
+                    label: 'Cantidad de Clientes',
+                    data: [clientesActivos, 10 - clientesActivos],
+                    backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(75, 192, 192, 1)'],
+                    borderWidth: 1
+                }]
+            }
+        });
+    }
+
+    function fetchData() {
+        $.ajax({
+            url: '/Home/GetDashboardData',
+            type: 'GET',
+            success: function(data) {
+                renderCharts(data.ocupacion, data.vehiculosIngresadosHoy, data.tarifasActivas, data.clientesActivos);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        fetchData(); // Llamar la función al cargar la página
+        setInterval(fetchData, 5000); // Actualizar datos cada 5 segundos
+    });
+</script>

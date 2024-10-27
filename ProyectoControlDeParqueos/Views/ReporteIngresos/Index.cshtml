@@ -1,0 +1,111 @@
+﻿@model ProyectoControlDeParqueos.Models.ReporteIngresos
+
+<style>
+    /* Estilo base */
+    html {
+        font-size: 14px; /* Tamaño base */
+    }
+
+    body {
+        margin-bottom: 60px; /* Margen inferior para espacio */
+        text-align: center; /* Centrar todo el contenido del cuerpo */
+    }
+
+    .container {
+        max-width: 100%; /* Contenedor ocupará el 100% del ancho disponible */
+        padding: 0 15px; /* Espaciado lateral */
+    }
+
+    .print-container {
+        max-width: 210mm; /* Ancho para impresión tipo PDF */
+        margin: 0 auto; /* Centrar el contenedor */
+        padding: 10mm; /* Espacio alrededor del contenido */
+        background-color: white; /* Fondo blanco para impresión */
+        border: 1px solid #ddd; /* Añadir borde */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente para el título */
+        font-weight: bold; /* Negrita */
+        margin: 0; /* Sin margen */
+    }
+
+    h2 {
+        font-size: 20px; /* Tamaño de fuente para subtítulos */
+        margin-top: 20px; /* Margen superior para el subtítulo */
+    }
+
+    h3 {
+        margin-top: 10px; /* Margen superior para el total */
+        font-weight: bold; /* Negrita */
+    }
+
+    table {
+        width: 80%; /* Ancho de la tabla, puedes ajustarlo si lo deseas */
+        margin: 20px auto; /* Centrar la tabla */
+        border-collapse: collapse; /* Colapsar bordes de la tabla */
+        text-align: center; /* Centrar el texto de la tabla */
+    }
+
+    th, td {
+        border: 1px solid #ddd; /* Bordes de la tabla */
+        padding: 8px; /* Espaciado en celdas */
+    }
+
+    th {
+        background-color: #007bff; /* Color de fondo para encabezados */
+        color: white; /* Color del texto en encabezados */
+        font-weight: bold; /* Negrita */
+    }
+
+    /* Estilos para impresión */
+    body.print .header,
+    body.print .footer {
+        display: none; /* Ocultar header y footer */
+    }
+</style>
+
+<script>
+    // Función para imprimir y agregar una clase al body
+    function printReport() {
+        document.body.classList.add('print'); // Agregar clase al body para ocultar header y footer
+        window.print(); // Imprimir
+        document.body.classList.remove('print'); // Eliminar clase después de imprimir
+    }
+</script>
+
+<div class="container my-5 p-4 border rounded shadow print-container">
+    <h1>Parqueo El Tunas</h1> <!-- Título añadido -->
+    <h2>Reporte de Ingresos por Tarifa</h2>
+    <p class="lead">Resumen de ingresos generados por tarifas</p>
+    <hr class="my-4">
+
+    <a href="@Url.Action("ExportarPDF", "ReporteIngresos")" class="btn btn-primary"> Descargar a PDF</a>
+    @* <a href="@Url.Action("ExportarExcel", "ReporteIngresos")" class="btn btn-info">Imprimir Excel</a> *@
+
+    <h3 class="mt-5">Tarifas y sus Costos</h3>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th>Descripción</th>
+                    <th>Costo por Hora (Q)</th>
+                    <th>Costo por Día (Q)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tarifa in Model.Tarifas)
+                {
+                    <tr>
+                        <td>@tarifa.descripcion</td>
+                        <td>@tarifa.costoPorHora.ToString("F2").Replace(",", ".")</td>
+                        <td>@tarifa.costoPorDia.ToString("F2").Replace(",", ".")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="mt-5">Total Ingresos Generados: Q @Model.TotalIngresos.ToString("F2").Replace(",", ".")</h3>
+</div>
