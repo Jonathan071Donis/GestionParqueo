@@ -19,6 +19,6 @@ RUN dotnet publish "ProyectoControlDeParqueos.csproj" -c Release -o /app/publish
 FROM build AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-COPY octubre.pfx /https/nuevoCerti.pfx
+COPY nuevoCerti.pfx /https/nuevoCerti.pfx
 
 ENTRYPOINT ["dotnet", "ProyectoControlDeParqueos.dll"]
