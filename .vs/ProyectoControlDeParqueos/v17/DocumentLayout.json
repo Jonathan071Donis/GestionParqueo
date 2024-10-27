@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|d:\\segundo semestre 2024\\proyecto\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|solutionrelative:proyectocontroldeparqueos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|d:\\segundo semestre 2024\\proyecto\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|solutionrelative:proyectocontroldeparqueos\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|d:\\segundo semestre 2024\\proyecto\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|solutionrelative:proyectocontroldeparqueos\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|d:\\segundo semestre 2024\\proyecto\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|solutionrelative:proyectocontroldeparqueos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD4CFC4E-BC74-4F40-B509-E54D52F7A268}|ProyectoControlDeParqueos\\ProyectoControlDeParqueos.csproj|d:\\segundo semestre 2024\\proyecto\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\proyectocontroldeparqueos\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 43,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,19 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGoAAAB9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T21:22:32.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -114,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Views\\TicketIngreso\\Index.cshtml",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Views\\TicketIngreso\\Index.cshtml",
@@ -126,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Views\\Cliente\\Create.cshtml",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Views\\Cliente\\Create.cshtml",
@@ -138,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Views\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Views\\Cliente\\Index.cshtml",
@@ -150,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Dockerfile",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Dockerfile",
@@ -163,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Views\\Shared\\_Layout.cshtml",
@@ -171,24 +159,32 @@
               "RelativeToolTip": "ProyectoControlDeParqueos\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAANEAAAAAAAAAAAAwwNUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T14:49:17.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2024-10-27T14:49:17.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\appsettings.json",
               "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\appsettings.json",
               "ToolTip": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\appsettings.json",
               "RelativeToolTip": "ProyectoControlDeParqueos\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-27T17:34:37.28Z"
+              "WhenOpened": "2024-10-27T17:34:37.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Segundo semestre 2024\\Proyecto\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "ProyectoControlDeParqueos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGoAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T21:22:32.242Z"
             },
             {
               "$type": "Document",
@@ -297,6 +293,10 @@
               "ViewState": "AgIAAIMAAAAAAAAAAAAUwJAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T14:40:03.687Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         },
