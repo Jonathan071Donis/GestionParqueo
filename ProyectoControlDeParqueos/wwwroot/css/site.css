@@ -26,6 +26,16 @@ body {
     margin-bottom: 60px;
 }
 
+/* Estilos para el ícono de hamburguesa */
+.nav-link {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #000; /* Color del ícono */
+}
+
+    .nav-link:hover {
+        color: #258cfb; /* Color al pasar el mouse */
+    }
+
 /* Responsive styles */
 .container {
     max-width: 100%; /* Hacer que la contenedor ocupe el 100% del ancho disponible */
@@ -52,6 +62,10 @@ body {
 @media (max-width: 768px) {
     .btn {
         width: 100%; /* Botones ocuparán el ancho completo en dispositivos más pequeños */
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Hacer que el menú desplegable ocupe el ancho completo */
     }
 
     .row {

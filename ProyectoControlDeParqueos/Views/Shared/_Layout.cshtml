@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - Parqueo El Tunas</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <style>
         /* Estilo general para la barra de navegación */
@@ -101,7 +103,7 @@
         }
 
         .dropdown-menu {
-            background-color: #08f9e6;
+            background-color: #e0b251;
         }
 
         .dropdown-item {
@@ -131,11 +133,11 @@
                 </a>
 
                 <!-- Menú desplegable y botón de cerrar sesión en la derecha -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
+                <div class="navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
                     <ul class="navbar-nav me-2">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Menu
+                                <i class="fas fa-bars"></i> <!-- Ícono de hamburguesa -->
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" asp-controller="Cliente" asp-action="Index" onclick="closeDropdown()">Clientes</a></li>
@@ -156,6 +158,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
