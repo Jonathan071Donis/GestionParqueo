@@ -1548,3 +1548,4 @@ D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDePar
 D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\obj\Debug\net8.0\ProyectoControlDeParqueos.pdb
 D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\obj\Debug\net8.0\ProyectoControlDeParqueos.genruntimeconfig.cache
 D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\obj\Debug\net8.0\ref\ProyectoControlDeParqueos.dll
+D:\Segundo semestre 2024\Proyecto\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\ProyectoControlDeParqueos\obj\Debug\net8.0\ProyectoControlDeParqueos.sourcelink.json
